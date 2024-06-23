@@ -101,7 +101,7 @@ header {
 }
 
 .mercado-play-card {
-    background: url('/img/streamings/mercado-play-banner.webp') no-repeat center center;
+    background: url('/clone-mercado-livre/img/streamings/mercado-play-banner.webp') no-repeat center center;
     background-size: cover;
     padding: 5%;
 }
@@ -134,12 +134,12 @@ header {
 }
 
 .streaming-1 {
-    background-image: linear-gradient(to top, rgba(11, 64, 75, 1) 0%, rgba(11, 64, 75, 0.1) 50%), url('/img/streamings/disney-plus-banner.jpg');
+    background-image: linear-gradient(to top, rgba(11, 64, 75, 1) 0%, rgba(11, 64, 75, 0.1) 50%), url('/clone-mercado-livre/img/streamings/disney-plus-banner.jpg');
     background-size: cover;
 }
 
 .streaming-2 {
-    background-image: linear-gradient(to top, rgba(130, 26, 143, 1) 0%, rgba(130, 26, 143, 0.1) 50%), url('/img/streamings/max-banner.png');
+    background-image: linear-gradient(to top, rgba(130, 26, 143, 1) 0%, rgba(130, 26, 143, 0.1) 50%), url('/clone-mercado-livre/img/streamings/max-banner.png');
     background-size: cover;
 }
 
