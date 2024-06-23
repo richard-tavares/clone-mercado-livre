@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercado Livre</title>
+        <meta name="description" content="Clone do site oficial do Mercado Livre">
+        <meta name="author" content="Richard Tavares">
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" sizes="180x180" href="img/favicon.svg">
+        <!-- Fonts -->
+        <link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true">
+        <link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true">
+        <link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="pt-2">
+            <div class="container">
+                <div class="row p-2 align-items-center">
+                    <div class="col-sm-12 col-lg-2 text-center">
+                        <img src="img/mercado-livre-logo.png" alt="logo" class="img-fluid mb-1">
+                        <button class="d-none d-sm-block btn btn-sm btn-outline btn-block">Informe seu CEP</button>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-12 col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control mb-2" placeholder="Buscar produtos, marcas e muito mais...">
+                            <btn class="btn btn-light mb-2">
+                                <i class="bi bi-search"></i>
+                            </btn>
+                          </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="nav-link p-0">Categorias</a>
+                            <a href="#" class="nav-link p-0">Ofertas</a>
+                            <a href="#" class="nav-link p-0">Histórico</a>
+                            <a href="#" class="nav-link p-0">Supermercado</a>
+                            <a href="#" class="nav-link p-0">Moda</a>
+                            <a href="#" class="nav-link p-0">Mercado Play</a>
+                            <a href="#" class="nav-link p-0">Vender</a>
+                            <a href="#" class="nav-link p-0">Contato</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 text-center">
+                        <img src="img/meli-plus.webp" alt="meli-plus" class="d-none d-sm-block img-fluid mb-1">
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="nav-link p-0">Crie a sua conta</a>
+                            <a href="#" class="nav-link p-0">Entre</a>
+                            <a href="#" class="nav-link p-0">Compras</a>
+                            <a href="#" class="nav-link p-0">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="img/carousel/slide1.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide2.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide3.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide4.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide5.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide6.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide7.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide8.webp" class="d-block w-100" width="100" role="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/carousel/slide9.webp" class="d-block w-100" width="100" role="img">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container">
+            <div class="card mt-4">
+                <div class="card-header border-0">
+                    <h5 class="card-title">Ofertas do dia</h5>
+                </div>
+                <div class="row mx-4" id="product-list"></div>
+                <nav aria-label="Navegação de página de produtos">
+                    <ul class="pagination justify-content-center mt-4">
+                        <li class="page-item" id="prev-page">
+                            <a class="page-link" href="#" aria-label="Página anterior">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item" id="next-page">
+                            <a class="page-link" href="#" aria-label="Próxima página">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 col-md-6 card-hover">
+                    <a href="#google-play">
+                        <img src="img/google-play.webp" class="img-fluid rounded" alt="google-play">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 card-hover">
+                    <a href="#apple-store">
+                        <img src="img/apple-store.webp" class="img-fluid rounded" alt="apple-store">
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 card border-0 shadow-sm">
+                <div class="p-4 card-header bg-purple text-white d-flex align-items-center">
+                    <img class="meli-plus-logo" src="img/meli-plus/meli-plus-logo.png" alt="meli-plus">
+                    <h5 class="ms-3 mb-0">Assine por R$ 17,99/mês</h5>
+                    <a href="#" class="btn btn-sm btn-transparent ms-auto">Assinar Meli+</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="my-2 pb-4 card-title">Conte com os melhores benefícios no Mercado Livre e do Mercado Pago</h5>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/meli-plus/truckgift.png" alt="Benefício 1" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <p class="meli-plus-text-sm">Frete grátis em milhões de produtos a partir de R$ 29</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/parceiros/disney-plus-logo.png" alt="Benefício 2" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <p class="meli-plus-text-sm">Disney+ e Star+ sem custo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/parceiros/deezer-logo.png" alt="Benefício 3" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <p class="meli-plus-text-sm">Deezer Premium 12 meses sem custo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/meli-plus/ultrapasse.png" alt="Benefício 4" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <p class="meli-plus-text-sm">60% OFF no Ultrapasse e outros benefícios</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 card rounded mercado-play-card">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 text-white">
+                        <img src="img/mercado-play.png" alt="mercado-play" class="img-fluid mercado-play-logo my-4">
+                        <h3 class="my-2">Agora você pode assistir séries e filmes</h3>
+                        <span class="badge badge-success bg-success mb-5">Grátis</span>
+                        <br>
+                        <button class="btn btn-sm btn-rounded btn-transparent mt-4">Acesse o mercado play</button>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <video controls autoplay class="w-100 rounded" poster="img/streamings/house-of-the-dragons.webp">
+                            <source src="video/house-of-the-dragons.m3u8">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">NOVIDADES DA MODA</h5>
+                            <img src="img/departamentos/moda.webp" class="card-hover card-img-top" alt="Imagem do Card 1">
+                            <div class="row mt-3">
+                                <div class="col-3">
+                                    <img src="img/departamentos/moda1.jpg" class="img-fluid img-sm rounded" alt="Imagem 1">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/departamentos/moda2.jpg" class="img-fluid img-sm rounded" alt="Imagem 2">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/departamentos/moda3.jpg" class="img-fluid img-sm rounded" alt="Imagem 3">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/departamentos/moda4.jpg" class="img-fluid img-sm rounded" alt="Imagem 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">DUCHAS E CHUVEIROS</h5>
+                            <img src="img/departamentos/chuveiro.webp" class="card-hover card-img-top" alt="Imagem do Card 2">
+                            <div class="row mt-3">
+                                <div class="col-3">
+                                    <img src="img/departamentos/chuveiro1.jpg" class="img-fluid img-sm rounded" alt="Imagem 1">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/departamentos/chuveiro2.jpg" class="img-fluid img-sm rounded" alt="Imagem 2">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/departamentos/chuveiro3.jpg" class="img-fluid img-sm rounded" alt="Imagem 3">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/departamentos/chuveiro4.jpg" class="img-fluid img-sm rounded" alt="Imagem 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">BRINQUEDOS ENCANTADOS</h5>
+                            <img src="img/departamentos/brinquedo.webp" class="card-hover card-img-top" alt="Imagem do Card 3">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <img src="img/departamentos/brinquedo1.jpg" class="img-fluid img-sm rounded" alt="Imagem 1">
+                                </div>
+                                <div class="col">
+                                    <img src="img/departamentos/brinquedo2.jpg" class="img-fluid img-sm rounded" alt="Imagem 2">
+                                </div>
+                                <div class="col">
+                                    <img src="img/departamentos/brinquedo3.jpg" class="img-fluid img-sm rounded" alt="Imagem 3">
+                                </div>
+                                <div class="col">
+                                    <img src="img/departamentos/brinquedo4.jpg" class="img-fluid img-sm rounded" alt="Imagem 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 card card-hover">
+                <div class="card-destaques row g-0 rounded">
+                    <div class="col-sm-12 col-lg-5">
+                        <img src="img/destaques/mercado-pago-machine-payments.jpg" alt="mercado-pago-machine-payments" class="img-fluid rounded-left">
+                    </div>
+                    <div class="col-sm-12 col-lg-7">
+                        <div class="row d-flex align-items-center h-100">
+                            <div class="col-2 mx-5 p-2 bg-white rounded">
+                                <div>
+                                    <img src="img/mercado-pago.jpg" alt="mercado-pago" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-5 text-white">
+                                <p>MAQUININHA OFICIAL</p>
+                                <h3>A PARTIR DE R$22,80</h3>
+                                <p>COMPRE JÁ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 card">
+                <div class="card-body">
+                    <h5 class="card-title p-2">Benefícios em conteúdo</h5>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="card card-hover">
+                                <div class="row g-0">
+                                    <div class="streaming-1 rounded">
+                                        <div class="d-flex align-items-end">
+                                            <div class="card-streaming card-body">
+                                                <div class="row footer-streaming d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <img src="img/parceiros/disney-plus-logo.png" class="img-fluid rounded" alt="Disney+">
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <h5 class="text-white ms-3 mb-0">Sem custo com Meli+</h5>
+                                                        <p class="text-white ms-3 mb-0">Disney+ e Star+</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="card card-hover">
+                                <div class="row g-0">
+                                    <div class="streaming-2 rounded">
+                                        <div class="d-flex align-items-end">
+                                            <div class="card-streaming card-body">
+                                                <div class="row footer-streaming d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <img src="img/parceiros/max-logo.png" class="img-fluid rounded" alt="Max">
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <h5 class="text-white ms-3 mb-0">Até 30% OFF</h5>
+                                                        <p class="text-white ms-3 mb-0">Max</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer mt-4">
+            <div class="py-4 row justify-content-around text-center">
+                <div class="col-sm-12 col-lg-3 p-4">
+                    <img class="mb-4" src="img/payment.svg" alt="pagamentos">
+                    <h4>Escolha como pagar</h4>
+                    <p>Com o Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado Crédito.</p>
+                    <a href="#">Como pagar com Mercado Pago</a>
+                </div>
+                <div class="col-sm-12 col-lg-3 p-4">
+                    <img class="mb-4" src="img/shipping.svg" alt="frete-gratis">
+                    <h4>Frete grátis a partir de R$ 79</h4>
+                    <p>Ao se cadastrar no Mercado Livre, você tem frete grátis em milhares de produtos.</p>
+                </div>
+                <div class="col-sm-12 col-lg-3 p-4">
+                    <img class="mb-4" src="img/protected.svg" alt="seguranca">
+                    <h4>Segurança, do início ao fim</h4>
+                    <p>Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, porque você está sempre protegido.</p>
+                    <a href="#">Como te protegemos</a>
+                </div>
+            </div>
+            <p class="text-sm">Copyright &copy; 1999-2024 Ebazar.com.br LTDA.</p>
+            <p class="pb-4 text-sm">CNPJ n.&ordm; 03.007.331/0001-41 / Av. das Nações Unidas, n&ordm; 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+        </footer>
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+        <!-- JS -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
