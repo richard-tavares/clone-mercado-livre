@@ -1,16 +1,20 @@
 :root {
-    --cor-amarelo: #ffe600;
-    --cor-roxo: #8d1890;
-    --cor-purpura: #8533af;
-    --cor-azul: #2968c8;
-    --cor-vermelho: #d12440;
-    --cor-verde: #00a650;
-    --cor-background: #e7e7e7;
+    --color-yellow: #ffe600;
+    --color-purple: #8d1890;
+    --color-light-purple: #8533af;
+    --color-blue: #2968c8;
+    --color-red: #d12440;
+    --color-green: #00a650;
+    --color-background: #e7e7e7;
     --font-proxima-nova: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
 }
 
 .bg-purple {
-    background-color: var(--cor-roxo);
+    background-color: var(--color-purple);
+}
+
+.bg-blue {
+    background-color: var(--color-blue);
 }
 
 .btn-transparent {
@@ -24,9 +28,25 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.info-title {
+    font-size: 1.2rem;
+    color: #4b4b4b;
+}
+
+.info-subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #4b4b4b;
+}
+
 .rounded-left {
     border-top-left-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
     border-bottom-left-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+}
+
+.rounded-right {
+    border-top-right-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    border-bottom-right-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
 }
 
 body {
@@ -35,12 +55,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--cor-background);
+    background-color: var(--color-background);
     font-size: var(--font-proxima-nova);
 }
 
 header {
-    background-color: var(--cor-amarelo);
+    background-color: var(--color-yellow);
     font-size: 0.8rem;
 }
 
@@ -101,7 +121,7 @@ header {
 }
 
 .mercado-play-card {
-    background: url('/clone-mercado-livre/img/streamings/mercado-play-banner.webp') no-repeat center center;
+    background: url('/img/streamings/mercado-play-banner.webp') no-repeat center center;
     background-size: cover;
     padding: 5%;
 }
@@ -130,16 +150,16 @@ header {
 }
 
 .card-destaques {
-    background-color: var(--cor-azul);
+    background-color: var(--color-blue);
 }
 
 .streaming-1 {
-    background-image: linear-gradient(to top, rgba(11, 64, 75, 1) 0%, rgba(11, 64, 75, 0.1) 50%), url('/clone-mercado-livre/img/streamings/disney-plus-banner.jpg');
+    background-image: linear-gradient(to top, rgba(11, 64, 75, 1) 0%, rgba(11, 64, 75, 0.1) 50%), url('/img/streamings/disney-plus-banner.jpg');
     background-size: cover;
 }
 
 .streaming-2 {
-    background-image: linear-gradient(to top, rgba(130, 26, 143, 1) 0%, rgba(130, 26, 143, 0.1) 50%), url('/clone-mercado-livre/img/streamings/max-banner.png');
+    background-image: linear-gradient(to top, rgba(130, 26, 143, 1) 0%, rgba(130, 26, 143, 0.1) 50%), url('/img/streamings/max-banner.png');
     background-size: cover;
 }
 
@@ -152,12 +172,6 @@ header {
     overflow: hidden;
     background-color: #fff;
     border-top: 1px solid #e6e6e6;
-}
-
-.footer h4 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #4b4b4b;
 }
 
 .footer p {
@@ -177,7 +191,6 @@ header {
 .footer>.text-sm {
     padding: 0 3%;
     color: #9999a6;
-    line-height: 0.2;
+    line-height: 1.7;
     font-size: 0.8rem;
-    word-wrap: break-word;
 }
