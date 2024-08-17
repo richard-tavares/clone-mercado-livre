@@ -25,3 +25,11 @@ O projeto está organizado da seguinte forma:
 ## Autor
 
 [RichardTavares](https://github.com/RichardTavares)
+
+## Aviso Legal
+
+Este projeto foi criado exclusivamente para fins educacionais e de aprendizado. Todo o conteúdo, incluindo imagens, logotipos e marcas registradas, é propriedade de seus respectivos detentores.
+
+O site é uma demonstração técnica de habilidades em desenvolvimento web e não tem a intenção de violar ou competir com os direitos de propriedade intelectual do Mercado Livre.
+
+Este projeto não é oficial e não possui afiliação com o Mercado Livre S.A. Seu propósito é puramente educacional e demonstrativo.
